@@ -1,0 +1,323 @@
+/* STARTER CODE -- DO NOT DELETE */
+/*	============================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Anek Malayalam', sans-serif;
+	line-height: 1.5;
+	font-weight: 900;
+}
+
+.container {
+	width: 1000px;
+	max-width: 100%;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+/*	============================================== */
+
+h1, h2 {
+	font-family: 'Anek Malayalam', sans-serif;
+	font-weight: 900;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5.998rem;
+}
+
+h2 {
+	font-size: 2.827rem;
+}
+
+h3 {
+	font-family: 'Anek Malayalam', sans-serif;
+	font-size: 1.414rem;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+p.lead-in {
+	font-family: 'Anek Malayalam', sans-serif,;
+	font-weight: 700;
+	font-size: 3.414rem;
+}
+
+/*	============================================== */
+
+header {
+	background: #000042;
+	color: #FFFFFF;
+	font-size: 200%;
+	position: sticky;
+	top: 100;
+	left: 100;
+	right: 100;
+	z-index: 200;
+	box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+}
+
+nav{
+	font-weight: 900;
+}
+
+nav ul {
+	font-weight: 700;
+	color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: center;
+
+	list-style: none;
+	margin: 10;
+	padding: 10;
+}
+
+nav ul li {
+	border-left: 10px solid rgba(0,0,0,0.2);
+}
+
+nav ul li:last-child {
+	border-right: 10px solid rgba(0,0,0,0.2);
+}
+
+nav ul li a {
+	display: block;
+	padding: 1rem 1.5rem;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 300ms ease;
+	font-family: 'Anek Malayalam', sans-serif;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
+/*	============================================== */
+
+.page-section {
+	background-color: #eee;
+}
+
+.section-content {
+	padding: 3rem 0;
+	text-align: center;
+}
+
+.section-decoration {
+	overflow: hidden;
+}
+
+.section-decoration img {
+	display: block;
+	position: relative;
+	margin-bottom: -1px;
+}
+
+.section-decoration--flipped img {
+	transform: rotate(180deg);
+	margin-top: -1px;
+}
+
+/*	---------------------------------------------- */
+
+.page-section--history {
+	background: #2B3784;
+	background: linear-gradient(30deg, #000342 0%, #000342 100%);
+}
+
+.avatar {
+	display: block;
+	width: 1000px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.page-section--history h2 {
+	color: #fff;
+	font-weight: 900;
+}
+
+.page-section--history p {
+	color: #fff;
+}
+
+/*	---------------------------------------------- */
+
+.page-section--stats {
+	background-color: #fff;
+}
+
+.page-section--stats .section-content {
+	padding-bottom: 6rem;
+}
+
+.page-section--stats h2 {
+	color: #2B3784;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.stat-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stat-item {
+	position: relative;
+	background: #ddd;
+	width: calc(25% - 2rem);
+	padding: .5rem;
+	margin: .5rem;
+	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+	transform: scale(1.1);
+	transition: border-radius 300ms ease, transform 300ms ease, background-color 300ms ease;
+}
+
+.stat-item:hover {
+	z-index: 1;
+	border-radius: 0;
+	transform: scale(1.3);
+	background-color: #000042;
+}
+
+.stat-item * {
+	transition: color 300ms ease;
+}
+
+.stat-item:hover * {
+	color: #fff;
+}
+
+.stat-item h3 {
+	margin-bottom: 0;
+}
+
+.stat-item p {
+	margin-top: 0;
+}
+
+/*	---------------------------------------------- */
+
+.page-section--connections {
+	background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5));
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.page-section--connections .section-content {
+	background-color: rgba(0,0,0,.5);
+}
+
+.page-section--connections h2,
+.page-section--connections h3,
+.page-section--connections p {
+	color: #fff;
+}
+
+.page-section--connections h3 {
+	display: inline-block;
+	border: 2px solid #fff;
+	padding: .5rem 2rem;
+	border-radius: 2rem;
+}
+
+.connections-item {
+	padding: 1rem;
+	background-color: rgba(182, 3, 3, 0.2);
+	margin-bottom: 1rem;
+}
+
+/*	---------------------------------------------- */
+
+.page-section--quote {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-section--quote .section-content {
+	background-color: #aa1428;
+}
+
+.page-section--quote h2 {
+	color: #fff;
+	font-size: 60px;
+}
+
+figure {
+	background: #fff;
+	padding: 2rem;
+	border-top-left-radius: 4rem;
+	border-bottom-right-radius: 4rem;
+}
+
+blockquote {
+	text-align: center;
+}
+
+blockquote p {
+	font-family: 'Anek Malayalam', sans-serif;
+	font-size: 2rem;
+}
+
+figcaption {
+	font-family: 'Anek Malayalam', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: #B11313;
+}
+
+
+/*	============================================== */
+
+.swatch-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -.5rem;
+	width: 100%;
+}
+
+.swatch-item {
+	width: calc(20% - 1rem);
+	padding: .5rem;
+	margin: .5rem;
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.swatch-sample {
+	height: 100px;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+.swatch-hex {
+	padding: .5rem 0 0;
+	text-align: center;
+}
+
+
+}
+.swatch-sample--two {
+	background-color: #FFFFFF;
+}
+.swatch-sample--three {
+	background-color: #2B3784;
+}
+.swatch-sample--four {
+	background-color: #aa1428;
